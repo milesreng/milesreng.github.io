@@ -135,6 +135,7 @@ a {
 
 #about-me-info {
     display: flex;
+    font-size: 1.15rem;
 }
 
 /** COURSES **/
