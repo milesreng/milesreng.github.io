@@ -1,0 +1,266 @@
+html, body {
+    font-family: 'Zen Kaku Gothic New', serif;
+    margin: 0;
+    font-size: 14px;
+    background-color: #E8E8E8;
+}
+
+a {
+    color: #6980C2;
+}
+
+/** HEADER **/
+
+#header {
+    background-color: #5B698F;
+    color: white;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+#header span {
+    padding-right: 2rem;
+}
+
+#header #right {
+    font-size: 1.4rem;
+}
+
+#header #left {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+
+#header span a {
+    text-decoration: none;
+    color: white;
+    transition: color 50ms linear 50ms;
+}
+
+#header span a:hover {
+    cursor: pointer;
+    color: #3BCEF5;
+}
+
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+/** BANNER **/
+
+#banner {
+    background-image: url('images/banner-background.jpg');
+    background-size: 150rem auto;
+    background-position: center;
+    display: flex;
+    height: 50rem;
+    margin-bottom: 2rem;
+}
+
+#banner-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#banner-text h1 {
+    font-size: 4rem;
+    align-items: center;
+    
+}
+
+#banner-text h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    align-items: center;
+}
+
+/** FLEX CONTAINER **/
+
+#container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: column;
+} 
+
+#left-col {
+    width: 60%;
+}
+
+#right-col {
+    width: 35%;
+}
+
+.lflex-container {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rflex-container {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/** ABOUT ME **/
+
+#about-me img {
+    width: 30%;
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+#about-me-info {
+    display: flex;
+}
+
+/** COURSES **/
+
+.course-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.course-container img {
+    width: 20%;
+    height: 100%;
+    border-radius: 5rem;
+}
+
+.left-course {
+    padding-left: 1rem;
+}
+
+.right-course {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+/** OTHER COURSES **/
+
+#codecademy-link {
+    text-decoration: none;
+}
+
+.codecademy {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.codecademy-course a {
+    font-size: 0.8rem;
+}
+
+.codecademy-course {
+    width: 30%;
+    padding-bottom: 1rem;
+}
+
+/** PROJECTS **/
+
+
+
+/** CONTACT **/
+
+#contact {
+    padding: 1rem;
+}
+
+#contact img {
+    width: 8%;
+    padding-right: 1rem;
+}
+
+/** TECHNICAL SKILLS **/
+
+.skill-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #E8E8E8;
+    color: white;
+    border: 1px solid lightgray;
+    margin-bottom: 1.5rem;
+}
+
+.skills {
+    height: 2rem;
+    background-color: #5B848F;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+#python {
+    width: 80%;
+}
+
+#html {
+    width: 90%;
+}
+
+#css {
+    width: 70%;
+}
+
+#js {
+    width: 30%;
+}
+
+#java {
+    width: 60%;
+}
+
+/** EDUCATION **/
+
+.school-container {
+    display: flex;
+}
+
+.school-container img {
+    width: 10%;
+    padding-right: 1rem;
+}
+
+/** MUSIC **/
+
+.music-container {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+}
+
+.music-icons {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.music-icons img {
+    padding-left: 1rem;
+    width: 1.5rem;
+}
