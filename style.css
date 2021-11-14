@@ -9,6 +9,17 @@ a {
     color: #6980C2;
 }
 
+
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+    
+    img {
+        display: none;
+    }
+}
+
 /** HEADER **/
 
 #header {
@@ -45,12 +56,6 @@ a {
 #header span a:hover {
     cursor: pointer;
     color: #3BCEF5;
-}
-
-@media screen and (max-width: 768px) {
-    .desktop-only {
-        display: none;
-    }
 }
 
 /** BANNER **/
@@ -263,4 +268,10 @@ a {
 .music-icons img {
     padding-left: 1rem;
     width: 1.5rem;
+}
+
+/** CREDITS **/
+
+#credits {
+    font-size: 0.8rem;
 }
