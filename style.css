@@ -56,7 +56,7 @@ a {
 /** BANNER **/
 
 #banner {
-    background-image: url('images/banner-background.jpg');
+    background-image: url('resources/images/banner-background.jpg');
     background-size: 150rem auto;
     background-position: center;
     display: flex;
