@@ -1,0 +1,236 @@
+:root {
+    --color-a: #8F6F42;
+    --color-b: #FFDBA8;
+    --color-c: #DBB37B;
+    --color-d: #336C8F;
+    --color-e: #7BB6DB;
+    --txt-color: #1B394B;
+    --bg-color: #FFF4E6;
+    --border: 1px solid var(--color-d);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: var(--txt-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    transition: 200ms linear;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    color: var(--txt-color);
+}
+
+.intro-header {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.intro-header span {
+    font-weight: bold;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--txt-color);
+}
+
+.header .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .nav-left img {
+    border-radius: 50%;
+    height: 3rem;
+}
+
+.header .nav-left h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.header .nav-left h1 span {
+    font-weight: bold;
+}
+
+.header .nav-right .wide-screen {
+    display: flex;
+    gap: 2rem;
+}
+
+.header .nav-right .wide-screen a:hover {
+    color: var(--color-d);
+}
+
+.header .nav-right .narrow-screen {
+    display: none;
+}
+
+.header .nav-right .narrow-screen .fas, .far {
+    font-size: 1.5rem;
+}
+
+.header .nav-right .narrow-screen .link-img:hover {
+    cursor: pointer;
+    color: var(--color-d);
+}
+
+/* INTRO BANNER */
+
+.about {
+    /* https://unsplash.com/@yannispap  */
+    background-image: url("https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    /* following photo https://unsplash.com/@samferrara */
+    /* background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); */
+    background-position: center;
+    min-height: 100vh;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about h1 {
+    color: var(--bg-color);
+}
+
+.about p {
+    color: var(--bg-color);
+    font-size: 1.5rem;
+}
+
+/* SKILLS */
+
+.skills .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+.skills .skills-container .skill {
+    text-align: center;
+    padding: 1rem;
+}
+
+.skills .skills-container .skill div {
+    font-size: 4rem;
+}
+
+.skills .skills-container .skill h2 {
+    padding: 1rem 0;
+}
+
+/* PROJECTS */
+
+.projects .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin: auto;
+    gap: 1rem;
+}
+
+.projects .projects-container .project {
+    text-align: center;
+    transition-delay: 100ms;
+}
+
+.projects .projects-container .project img {
+    width: 100%;
+
+}
+
+.projects .projects-container .project .description {
+    border-bottom: var(--border);
+    border-right: var(--border);
+    border-left: var(--border);
+    padding: .5rem 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 3rem;
+    background-color: var(--txt-color);
+}
+
+footer p {
+    color: var(--bg-color);
+    font-size: .8rem;
+}
+
+footer a {
+    color: var(--bg-color);
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .header .nav-right .narrow-screen {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .header .nav-right .wide-screen {
+        display: none;
+    }
+
+    .about p {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .header .nav-left h1 {
+        display: none;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
