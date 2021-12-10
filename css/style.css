@@ -134,9 +134,6 @@ a {
 
 /* SKILLS */
 
-.skills {
-}
-
 .skills .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -170,7 +167,14 @@ a {
 
 .bar {
     padding: .5rem 1rem;
+}
+
+.bar p {
     color: white;
+}
+
+.bar div {
+    display: none;
 }
 
 .html {
@@ -184,7 +188,7 @@ a {
 }
 
 .javascript {
-    background-color: #ffcc00;
+    background-color: #009933;
     width: 30%;
 }
 
@@ -276,6 +280,20 @@ footer a {
         font-size: 1.5rem;
     }
 
+    .skill-bars .bar-container .bar {
+        padding: .25rem 1rem;
+    }
+
+    .skill-bars .bar-container .bar p {
+        display: none;
+    }
+
+    .skill-bars .bar-container .bar div {
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -296,5 +314,9 @@ footer a {
 
     .skills .skills-container .skill h2 {
         font-size: 1.25rem;
+    }
+
+    .skills .skills-container .skill .skill-bar div {
+        font-size: .5rem;
     }
 }
