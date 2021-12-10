@@ -134,23 +134,68 @@ a {
 
 /* SKILLS */
 
+.skills {
+}
+
 .skills .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
+    gap: 4rem;
 }
 
 .skills .skills-container .skill {
     text-align: center;
     padding: 1rem;
-}
-
-.skills .skills-container .skill div {
-    font-size: 4rem;
+    background-color: #ffe9cc;
+    border-radius: 1rem;
 }
 
 .skills .skills-container .skill h2 {
     padding: 1rem 0;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.skills .skills-container .skill .skill-bars {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+.skill-bars .bar-container {
+    margin: 1rem 0;
+    background-color: lightgrey;
+    border: var(--border);
+}
+
+.bar {
+    padding: .5rem 1rem;
+    color: white;
+}
+
+.html {
+    background-color: #e68a00;
+    width: 90%;
+}
+
+.css {
+    background-color: #336C8F;
+    width: 80%;
+}
+
+.javascript {
+    background-color: #ffcc00;
+    width: 30%;
+}
+
+.python {
+    background-color: #7BB6DB;
+    width: 70%;
+}
+
+.java {
+    background-color: #e60000;
+    width: 40%;
 }
 
 /* PROJECTS */
@@ -223,6 +268,14 @@ footer a {
         display: block;
     }
 
+    .skills .skills-container .skill {
+        margin-bottom: 2rem;
+    }
+
+    .skills .skills-container .skill h2 {
+        font-size: 1.5rem;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -239,5 +292,9 @@ footer a {
     .about p {
         font-size: 1rem;
         text-align: center;
+    }
+
+    .skills .skills-container .skill h2 {
+        font-size: 1.25rem;
     }
 }
