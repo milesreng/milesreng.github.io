@@ -250,7 +250,8 @@ a {
 /* CONTACT */
 
 .contact-links {
-    width: 100%;
+    width: 50%;
+    margin: auto;
     text-align: center;
 }
 
@@ -265,16 +266,15 @@ a {
 
 .contact .other-contact-links {
     font-size: 3rem;
-    width: 100%;
-    text-align: center;
 }
 
 .contact .other-contact-links .contact-link {
     display: flex;
-    align-items: center;
+    text-align: left;
     gap: 3rem;
     padding-bottom: 1rem;
 }
+
 .contact .other-contact-links .contact-link div {
     width: 3rem;
 }
