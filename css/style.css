@@ -247,6 +247,45 @@ a {
 /* COURSEWORK */
 
 
+/* CONTACT */
+
+.contact-links {
+    width: 100%;
+    text-align: center;
+}
+
+.contact .contact-links div {
+    font-size: 3rem;
+    padding: 0 1rem;
+}
+
+.contact .contact-links div:hover {
+    color: var(--color-d);
+}
+
+.contact .other-contact-links {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.contact .other-contact-links .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 1rem;
+}
+.contact .other-contact-links .contact-link div {
+    width: 3rem;
+}
+
+.contact .other-contact-links p {
+    font-size: 1rem;
+}
+
+.contact .other-contact-links a {
+    font-size: 3rem;
+}
 
 /* FOOTER */
 
