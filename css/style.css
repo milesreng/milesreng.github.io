@@ -225,7 +225,7 @@ a {
 .projects .projects-container .project {
     text-align: center;
     transition-delay: 100ms;
-    height: 23rem;
+    margin: 1rem 0;
 }
 
 .projects .projects-container .project img {
@@ -238,19 +238,44 @@ a {
     border-bottom: var(--border);
     border-right: var(--border);
     border-left: var(--border);
-    padding: .5rem 0;
+    padding: .5rem;
+    transition: 200ms linear;
 }
+.projects .projects-container .project:hover .description {
+    background-color: var(--bg-color-alt);
+}
+
+/* 
+.projects .projects-container .project:hover .description h3 {
+    color: var(--bg-color); 
+}
+
+.projects .projects-container .project:hover .description p {
+    color: var(--bg-color); 
+} */
+
 .project .description p {
     padding: .5rem 0;
 }
 
 /* COURSEWORK */
 
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.coursework .course-container .course img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
 
 /* CONTACT */
 
 .contact-links {
-    width: 50%;
+    width: 70%;
     margin: auto;
     text-align: center;
 }
@@ -262,29 +287,6 @@ a {
 
 .contact .contact-links div:hover {
     color: var(--color-d);
-}
-
-.contact .other-contact-links {
-    font-size: 3rem;
-}
-
-.contact .other-contact-links .contact-link {
-    display: flex;
-    text-align: left;
-    gap: 3rem;
-    padding-bottom: 1rem;
-}
-
-.contact .other-contact-links .contact-link div {
-    width: 3rem;
-}
-
-.contact .other-contact-links p {
-    font-size: 1rem;
-}
-
-.contact .other-contact-links a {
-    font-size: 3rem;
 }
 
 /* FOOTER */
@@ -351,6 +353,14 @@ footer a {
         display: block;
         color: white;
         font-size: 1.5rem;
+    }
+
+    .contact .contact-links div {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: .8rem;
     }
 
 }
