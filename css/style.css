@@ -200,7 +200,12 @@ a {
 
 .java {
     background-color: #e60000;
-    width: 40%;
+    width: 60%;
+}
+
+.rstudio {
+    background-color: #12B3A2;
+    width: 70%;
 }
 
 /* PROJECTS */
