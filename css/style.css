@@ -278,8 +278,17 @@ a {
 }
 
 .course h3, .course p {
+    width: 100%;
     color: var(--bg-color);
     text-shadow: -1px -1px 0 var(--txt-color), 1px -1px 0 var(--txt-color), -1px 1px 0 var(--txt-color), 1px 1px 0 var(--txt-color);
+}
+
+.course h3 {
+    background-color: rgba(25, 100, 200, 0.4);
+}
+
+.course p {
+    display: none;
 }
 
 .course {
@@ -288,6 +297,17 @@ a {
     text-align: center;
     padding: 1rem;
 }
+
+.course:hover {
+    border: 1px solid black;
+}
+
+
+.course:hover p {
+    display: block;
+    background-color: rgba(25, 100, 200, 0.4);
+}
+
 
 #cs101 {
     background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80');
