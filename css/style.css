@@ -54,6 +54,13 @@ a {
     font-weight: bold;
 }
 
+.more-info {
+    text-align: center;
+    padding: .5rem 0 1rem 0;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
 /* HEADER */
 
 .header {
@@ -221,16 +228,9 @@ a {
     margin: 0;
 }
 
-.projects .more-info {
-    text-align: center;
-    padding: .5rem 0 1rem 0;
-    font-weight: 400;
-}
-
 .projects .projects-container .project {
     text-align: center;
     transition-delay: 100ms;
-    margin: 1rem 0;
 }
 
 .projects .projects-container .project img {
@@ -271,6 +271,10 @@ a {
     gap: 2rem;
 }
 
+.coursework h1 {
+    margin: 0;
+}
+
 .coursework .course-container .course {
     height: 15rem;
     width: 100%;
@@ -280,11 +284,11 @@ a {
 .course h3, .course p {
     width: 100%;
     color: var(--bg-color);
-    text-shadow: -1px -1px 0 var(--txt-color), 1px -1px 0 var(--txt-color), -1px 1px 0 var(--txt-color), 1px 1px 0 var(--txt-color);
 }
 
 .course h3 {
-    background-color: rgba(25, 100, 200, 0.4);
+    background-color: rgba(170, 170, 170, 0.6);
+    text-shadow: -1px -1px 0 var(--txt-color), 1px -1px 0 var(--txt-color), -1px 1px 0 var(--txt-color), 1px 1px 0 var(--txt-color);
 }
 
 .course p {
@@ -298,14 +302,13 @@ a {
     padding: 1rem;
 }
 
-.course:hover {
-    border: 1px solid black;
+.course .course-info {
+    margin-top: 2rem;   
 }
-
 
 .course:hover p {
     display: block;
-    background-color: rgba(25, 100, 200, 0.4);
+    background-color: rgba(80, 80, 80, 0.6);
 }
 
 
