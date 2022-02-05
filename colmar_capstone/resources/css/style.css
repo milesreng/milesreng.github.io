@@ -1,0 +1,277 @@
+html, body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Rubik';
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* NAVIGATION BAR */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    font-family: 'Zen Kaku Gothic New';
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 8px;
+}
+
+#header a:hover {
+    color: #5086AD;
+}
+
+.nav-left img {
+    height: 32px;
+    padding-left: 24px;
+}
+
+.nav-left {
+    align-items: center;
+    font-size: 32px;
+    margin: 0;
+}
+
+.nav-right {
+    padding-right: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+}
+
+/* MISSION STATEMENT */
+
+.mission {
+    background-color: lightgray;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4a4a4a;
+    padding-right: 60px;
+}
+
+.mission img {
+    width: 100%;
+    margin: 32px 0px 32px 24px;
+    overflow: hidden;
+}
+
+.banner-container {
+    margin-top: 64px;
+}
+
+.banner-left {
+    width: 60%;
+}
+
+#banner-info {
+    width: 30%;
+}
+
+#banner-info h1 {
+    font-size: 3rem;
+}
+
+#banner-info h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+button {
+    background-color: #5086AD;
+    width: 80%;
+    padding: 8px 0px;
+    color: white;
+    font-size: 1.25rem;
+    border: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: #467799;
+}
+
+/* GENERAL INFORMATION */
+
+.information {
+    display: flex;
+}
+
+.info-left {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.info-left img {
+    width: 100%;
+}
+
+.info-left p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.info-right {
+    width: 40%;
+    padding-top: 24px;
+    border-left: 1px solid lightgray;
+    padding-left: 16px;
+}
+
+.info-right img {
+    width: 35%;
+    height: auto;
+}
+
+.info-link {
+    display: flex;
+    align-items: center;
+}
+
+.extra-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.extra-info p {
+    font-weight: 300;
+}
+
+.extra-info a {
+    color: #3284D6;
+    text-decoration: none;
+}
+
+#info-citation {
+    font-size: 0.8rem;
+}
+
+/* LEARNING */
+
+.learning {
+    text-align: center;
+    background-color: #e8e8e8;
+    padding-top: 32px;
+}
+
+.courses {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    padding: 32px 72px;
+    justify-content: space-between;
+}
+
+.course-container {
+    height: auto;
+    width: 30%;
+    background-color: white;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+}
+
+.course-container img {
+    height: auto;
+    width: 100%;
+}
+
+.course-container h5 {
+    padding-left: 35px;
+}
+
+.course-container p {
+    font-weight: 300;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 8px;
+}
+
+/* THESIS */
+.thesis h2 {
+    text-align: center;
+    padding: 32px 0px;
+}
+
+.thesis p {
+    font-weight: 300;
+}
+
+.thesis-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thesis-left {
+    width: 60%;
+    padding: 0px 24px;
+}
+
+.thesis-left video {
+    width: 100%;
+}
+
+.thesis-right {
+    width: 40%;
+}
+
+.thesis-info {
+    display: flex;
+    align-items: center;
+}
+
+.thesis-info img {
+    width: 35%;
+    padding: 0px 16px 32px 16px;
+}
+
+.thesis-txt {
+    padding-right: 24px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid darkgray;
+    margin-top: 20px;
+}
+
+.footer-split {
+    display: flex;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #4a4a4a;
+}
+
+#footer-right p {
+    padding: 0px 10px;
+}

@@ -287,7 +287,7 @@ a {
 }
 
 .course h3 {
-    background-color: rgba(170, 170, 170, 0.6);
+    background-color: rgba(80, 80, 80, 0.6);
     text-shadow: -1px -1px 0 var(--txt-color), 1px -1px 0 var(--txt-color), -1px 1px 0 var(--txt-color), 1px 1px 0 var(--txt-color);
 }
 
@@ -299,11 +299,7 @@ a {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 1rem;
-}
-
-.course .course-info {
-    margin-top: 2rem;   
+    padding: 3rem 1rem;
 }
 
 .course:hover p {
@@ -314,14 +310,17 @@ a {
 
 #cs101 {
     background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80');
+    opacity: .8;
 }
 
 #cs201 {
     background-image: url('https://images.unsplash.com/photo-1544207763-2872e5eb9b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    opacity: .8;
 }
 
 #sta199 {
     background-image: url('https://images.unsplash.com/photo-1605870445919-838d190e8e1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80');
+    opacity: .8;
 }
 
 /* CONTACT */
